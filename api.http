@@ -1,0 +1,35 @@
+### User - Test
+GET http://localhost:3000/api/v1/users/test
+Accept: application/json
+Content-Type: application/json
+
+### User - Register
+POST http://localhost:3000/api/v1/users/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "ricidkumbara1@gmail.com",
+    "password": "root",
+    "name": "RICID KUMBARA"
+}
+
+### User - Login
+POST http://localhost:3000/api/v1/users/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "ricidkumbara1@gmail.com",
+    "password": "root"
+}
+
+### User - Update
+PUT http://localhost:3000/api/v1/users
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAzLCJuYW1lIjoiUklDSUQgS1VNQkFSQSIsImVtYWlsIjoicmljaWRrdW1iYXJhMUBnbWFpbC5jb20iLCJpYXQiOjE3MDU2Nzk4MjcsImV4cCI6MTcwNTc2NjIyN30.yNOSdVgCN3WNq6TyPiGfnEbKToB1sQqaI8n_xUsu4zQ
+
+{
+    "name": "CID"
+}
